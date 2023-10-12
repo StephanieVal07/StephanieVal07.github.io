@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Module 4: Let's Play Tic-Tac-Toe! </title>
+        <!-- Favicon-->
+        <!--
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />-->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Let's Play Tic-Tac-Toe!</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Sections
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#start">Start Game</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://lamp.cse.fau.edu/~sval2021/" target="_blank">More Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <!--<img class="masthead-avatar mb-5" src="avataaars.svg" alt="trophy" /> -->
+                <br> <i class="fa fa-trophy" style="font-size:100px;color: rgb(255,250,205)"></i> </br>
+                <link class="masthead-avatar mb-5" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0"> Tic-Tac-Toe, Three in a Row!</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Amuse yourselves with a game of Tic-Tac-Toe! </p>
+            </div>
+        </header>
+        <!-- About Section-->
+        <section class="page-section about" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Instructions</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <div id=step1><h1 style="font-size:30px; color:#2c3e50">Step 1:</h1>
+                            <p style="font-size:20px; color:#2c3e50">Typically a <strong>two-person</strong> game, but you can play it solo!</p></div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <div id=step2><h1 style="font-size:30px; color:#2c3e50">Step 2:</h1>
+                            <p style="font-size:20px; color:#2c3e50"; >Click on <strong><em>one box</em></strong>, any box that isn't taken by your opponent, during each of your turns!</p></div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <div id=step3 ><h1 style="font-size:30px; color:#2c3e50">Step 3:</h1>
+                                <p style="font-size:20px; color:#2c3e50" >Get your designated pattern into a row of <strong><em>three</em></strong>, be it: <strong><em>vertically, horizontally, or diagonally</em></strong> to win! </p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Game Section-->
+        <section class="page-section bg-primary text-white mb-0" id="start">
+            <div class="container">
+                <!-- Start Game Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Let's Play!</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="text-center mt-4">
+                    <div class="row">
+                    </div>
+                    <!-- About Section Button-->
+                    <div class="text-center mt-4">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                        <script src="scripts.js"></script>
+                        <div id="tictactoe"></div> 
+                        <p><!--Add more space--></p><br></br>
+                        <p><!-- Adds additional space --></p><br></br>
+                    <a class="btn btn-xl btn-outline-light" id="clickMe" type="button" onclick="startNewGame();">
+                        <i class="fas fa-heart"></i>
+                        Reset!
+                    </a> 
+                   <!--  
+                    <a class="btn btn-xl btn-outline-light" href="index.html#start">
+                        <i class="fas fa-star"></i>
+                       Reset!
+                    </a>-->
+                </div>
+            </div>
+        </section>
+       <!-- Contact Section-->
+      <!-- <section class="page-section" id="score">
+        <div class="container"> -->
+            <!-- Contact Section Heading-->
+           <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">The Results Are In!</h2> -->
+            <!-- Icon Divider-->
+            <!-- <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div> -->
+            <!-- Contact Section Form-->
+           <!-- <div class="row justify-content-center"> 
+                <div class="col-lg-8 col-xl-7"> -->
+                        <!-- Message input-->
+                        <!-- <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div> -->
+                        <!-- Want-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <!-- <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div> -->
+                        <!-- Submit Button-->
+                       <!-- <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit"><i class="fa fa-heart"></i> Play Again!</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Institution Location</h4>
+                        <p class="lead mb-0">
+                            777 Glades Rd, 
+                            <br />
+                            Boca Raton, FL 33431
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">More Projects</h4>
+                        <p class="lead mb-0">
+                            <a href=https://lamp.cse.fau.edu/~sval2021/ target="_blank">Click here</a>
+                            for more projects.
+                        </p>
+                        <!--
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    -->
+                    </div> 
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Contact Information</h4>
+                        <p class="lead mb-0">
+                            <a href=https://www.fau.edu/about/contact/ target="_blank">Click here</a>
+                             to contact me regarding bugs and updates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Stephanie Val 2021</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Players</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img  class="img-fluid  rounded mb-5" id="play" src="alex-green-5.jpg" alt="two players" style="width:500px" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4" style="font-size:30px; color:#2c3e50"> Can Be Played by One to Two people!</p>
+                                    <button class="btn btn-primary" href="index.html" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Click Any Box</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="tic-tac-toe-toy.jpg" alt="tic-tac-toy" style="width:350px;height:250px;" /> <!--https://pixabay.com/images/search/tic%20tac%20toe/-->
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4"  style="font-size:30px; color:#2c3e50">Click one box, any box, per turn!</p>
+                                    <button class="btn btn-primary" href="index.html" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tic-Tac-Toe, Three In a Row!</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="gameit.jpg" alt="winner" style="width:250px;height:250px;"/> <!--https://free-images.com/display/tictactoe_gif.html-->
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4"  style="font-size:30px; color:#2c3e50">Get your pattern <strong> three in a row: diagonally, vertically, or horizontally,</strong> all while trying to block your opponent
+                                         from getting their pattern into <strong>a row of three</strong> to <strong>win!</strong></p>
+                                    <button class="btn btn-primary" href="index.html" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts1.js"></script>
+<!--
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+-->
+        
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!--
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
+    </body>
+</html>

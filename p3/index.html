@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Project 3 - A Simple Statistical Analysis</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" /> 
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">Statistical Calculator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://lamp.cse.fau.edu/~sval2021/" target="_blank">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.fau.edu/about/contact/" target="_blank">Institution Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">A Warm Welcome!</h1>
+                        <p class="fs-4"> This is a Calculator used to compute the: maximum, minimum, average, median and range of a small set of numbers!</p>
+                        <p class="fs-4"> To calculate these outputs:</p>
+                        <p class="fs-4"> Input <strong>one number</strong>, any number, in each of the three textboxes and then click <strong>"Calculate"</strong> when done!</p>
+                        <a class="btn btn-primary btn-lg" href="#section1"> <em>Happy Enumerating!</em></a> <!--Used to automatically scroll down page-->
+                    </div>
+                </div>
+        </div>
+        </header>
+        <!-- Page Content-->
+         <!--section1 is uses the "happy calculating"  button to move down the web page-->
+        <h1 id="section1"></h1> 
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <!-- Page Features-->
+                <div class="row gx-lg-5">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--For the calculator icon-->
+                                    <i class="fa fa-calculator"></i></div>
+                                <h2 class="fs-4 fw-bold">Your Inputs: </h2>
+                                <p class="mb-0">
+                                    <p class="center"> 
+                                        <label for=""><strong>First Value: </strong></label><input type="number" id="finput" name="finput" placeholder="e.g. 1000"></input><br></br>
+                                        <label for=""><strong> Second Value: </strong></label><input type="number" id="sinput" name="sinput" placeholder="e.g. 10"></input><br></br>
+                                        <label for=""><strong>Last Value: </strong></label><input type="number" id="linput" name="linput" placeholder="e.g. 100"></input><br></br>
+                                        <a href="#section2"><button type="button" onClick="javascript:allTogt(); return false;" class="btn btn-primary btn-lg">  
+                                            Calculate</button></a><br></br><!--To trigger the function call and get outputs-->
+                                        <!-- <button type="button" onClick="javascript:allTogt(); return false;" class="btn btn-primary btn-lg" > 
+                                           Calculate</button><br></br> --><!--To trigger the function call and get outputs-->
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
+                                <h2 class="fs-4 fw-bold">Results: </h2> <!--Gets all of the outputs and displays them with the appropriate label-->
+                                <p class="mb-0">
+                                    <p align="text-center"> 
+                                        <p id="section2"></p>
+                                        <label for="maxOut"> <strong>Maximum:</strong></label><br>
+                                        <input type="textbox" name="maxOut" id="maxOut"><br><br>
+                                        <label for="minOut"><strong>Minimum:</strong></label><br>
+                                        <input type="textbox" name="minOut" id="minOut"><br><br>
+                                        <label for="medOut"><strong>Median:</strong></label><br>
+                                        <input type="text" name="medOut" id="medOut"><br><br>
+                                        <label for="range"><strong>Range:</strong></label><br>
+                                        <input type="textbox" name="range" id="range"><br><br>
+                                        <label for="output"><strong>Average: </strong></label><br>
+                                        <input type="textbox" name="output" id="output"><br><br>
+                                     </p> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Stephanie Val 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
+    </body>
+</html>

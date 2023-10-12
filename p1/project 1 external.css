@@ -1,0 +1,78 @@
+html, body {
+    background: rgb(253, 227, 213);
+    margin: 0px;
+    height: 100%
+  }
+div.box {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: auto;
+    right: 205px;
+    bottom: auto;
+    left: 205px;
+  }
+h1.center {
+    color: rgb(0, 0, 0); 
+    /* margin-left: 450px; */
+    font-size: 30pt;
+    text-align: center;
+  }
+h2.headertekst {
+    color:rgb(0, 0, 0); 
+    /* margin-left: 613px;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    text-align: center;
+  }
+h3 {
+    color: rgb(0,0,0); margin-left: 613px;
+  }
+img.center {
+    display: block;
+    border: 7px solid rgb(186, 187, 209);
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+p.about {
+    font-family: georiga;
+    font-size: 17pt; margin-left: 10px;
+  }
+p.smalspc {
+    margin-bottom: 40px;
+}
+p.bullets {
+    font-family: georgia;
+    font-size: 16pt;
+    text-align: center;
+  }
+p.z {
+    /* For adding space*/
+    margin-bottom: 100px;
+  }
+table, th, td {
+    border: 3px solid rgb(186, 187, 209);
+    font-family: georgia;
+    font-size: 13pt; margin-left: 10px;
+  }
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+ul { 
+    font-family: georgia;
+  }
+ul.b {
+    list-style-type: circle;
+    font-size: 13pt; margin-left: 352px;
+  }
+div.bottm {
+    font-family: georiga;
+    font-size: 15pt; /* margin-left: 615px; */
+    margin: 0 auto;
+    background-color: rgb(186, 187, 209);
+    height: 38px;
+    width: 169px;
+  }
+  
